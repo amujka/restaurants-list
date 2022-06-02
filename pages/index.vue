@@ -1,11 +1,12 @@
 <template>
-
+<div>
     <Header/>
-    <div class="container">
+  <div class="container">
       <h1>Welcome to Restaurantly</h1>
-      <a href="/restaurants">Go to restaurants</a>
-    </div>
+      <NuxtLink to="/restaurants">Go to restaurants</NuxtLink>
+  </div>
 
+</div>
 </template>
 
 <style lang="scss">
@@ -14,6 +15,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-decoration: none;
 }
 .container {
   display: flex;

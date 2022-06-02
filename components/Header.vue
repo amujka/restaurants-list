@@ -7,10 +7,10 @@
   <h3 class="logo">Restaurantly</h3>
   <ul class="navigation">
     <li>
-      <a href="/">Home</a>
+      <NuxtLink to="/">Home</NuxtLink>
     </li>
   <li>
-      <a href="/restaurants">Restaurants</a>
+      <NuxtLink to="/restaurants">Restaurants</NuxtLink>
     </li>
   </ul>
 </header>
