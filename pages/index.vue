@@ -1,6 +1,5 @@
 <template>
   <div>
-    <Header />
     <div class="container">
       <h1>Welcome to Restaurantly</h1>
       <NuxtLink to="/restaurants">Go to restaurants</NuxtLink>
@@ -24,6 +23,6 @@
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
-  background-color: #eee;
+  //background-color: #eee;
 }
 </style>

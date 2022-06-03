@@ -11,10 +11,7 @@ const restaurantsList = ref<IRestaurant[]>(restaurants);
       <div class="column">
         <RestaurantsTableRow :isHeader="true" />
         <template
-          v-for="(restaurant, index) in restaurantsList.slice(
-            0,
-            restaurantsList.length / 2
-          )"
+          v-for="(restaurant, index) in restaurantsList.slice(0,restaurantsList.length / 2)"
           :key="restaurant.id"
         >
           <RestaurantsTableRow
@@ -27,10 +24,7 @@ const restaurantsList = ref<IRestaurant[]>(restaurants);
       <div class="column">
         <RestaurantsTableRow :isHeader="true" />
         <template
-          v-for="(restaurant, index) in restaurantsList.slice(
-            25,
-            restaurantsList.length
-          )"
+          v-for="(restaurant, index) in restaurantsList.slice(25,restaurantsList.length)"
           :key="restaurant.id"
         >
           <RestaurantsTableRow

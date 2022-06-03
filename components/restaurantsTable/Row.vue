@@ -1,11 +1,11 @@
 <script setup lang="ts">
-interface IRestaurantRow {
-  rank?: number;
-  name?: string;
-  index?: number;
-  isHeader?: Boolean;
-}
-const props = defineProps<IRestaurantRow>();
+    interface IRestaurantRow {
+        rank?: number;
+        name?: string;
+        index?: number;
+        isHeader?: Boolean;
+    }
+    const props = defineProps<IRestaurantRow>();
 </script>
 <template>
   <div class="row" v-if="isHeader">
@@ -14,8 +14,8 @@ const props = defineProps<IRestaurantRow>();
   </div>
   <div v-else class="row" :class="index % 2 !== 0 ? 'bgGray' : null">
     <h4 class="header">{{ rank }}.</h4>
-    <nuxt-link :to="`/restaurants/${name}`">
-      <h4 class="">{{ name }}</h4>
+    <nuxt-link :to="`/restaurants/restaurant-details/${name}`">
+        <h4 class="">{{ name }}</h4>
     </nuxt-link>
   </div>
 </template>
@@ -25,7 +25,7 @@ const props = defineProps<IRestaurantRow>();
   display: flex;
   align-items: center;
   padding: 10px;
-  border-bottom: 1px #eee solid;
+  border-bottom: 1px #202020 solid;
   .header {
     flex-basis: 50px;
     margin: 0;
@@ -34,7 +34,7 @@ const props = defineProps<IRestaurantRow>();
   }
 
   a {
-    color: coral;
+    color: rgb(228, 157, 27);;
   }
 }
 .bgGray {

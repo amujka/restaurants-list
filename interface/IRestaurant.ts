@@ -7,8 +7,3 @@ export interface IRestaurant {
     numberOfStores: string
     imageUrl: string
 }
-
-export interface IRestaurantRow {
-    rank: number
-    name: string
-}

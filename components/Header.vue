@@ -25,7 +25,8 @@
   margin: 0;
   padding: 10px;
   box-shadow: 0 1px 3px #808080;
-  background-color: coral;
+  background-color: rgb(228, 157, 27);
+;
   .logo {
     color: #eee;
   }
