@@ -1,8 +1,15 @@
 <template>
   <div>
     <div class="container">
-      <h1>Restaurant not found</h1>
-      <NuxtLink to="/">return to home</NuxtLink>
+      <NuxtLayout name="page-not-found">
+        <template #errorTitle>
+          <h1>page not found</h1>
+        </template>
+
+        <template #redirectLink>
+          <NuxtLink to="/">return to home</NuxtLink>
+        </template>
+      </NuxtLayout>
     </div>
   </div>
 </template>

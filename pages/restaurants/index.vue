@@ -1,6 +1,8 @@
 <script setup lang="ts"></script>
 <template>
-    <div>
-        <RestaurantsTable/>
-    </div>
+  <div>
+    <NuxtLayout name="title">
+      <RestaurantsTable />
+    </NuxtLayout>
+  </div>
 </template>

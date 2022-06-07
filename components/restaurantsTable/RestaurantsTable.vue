@@ -6,12 +6,14 @@ const restaurantsList = ref<IRestaurant[]>(restaurants);
 </script>
 <template>
   <div class="container">
-    <h1 class="title">TOP 50: THE RANKING</h1>
     <div class="table">
       <div class="column">
         <RestaurantsTableRow :isHeader="true" />
         <template
-          v-for="(restaurant, index) in restaurantsList.slice(0,restaurantsList.length / 2)"
+          v-for="(restaurant, index) in restaurantsList.slice(
+            0,
+            restaurantsList.length / 2
+          )"
           :key="restaurant.id"
         >
           <RestaurantsTableRow
@@ -24,7 +26,10 @@ const restaurantsList = ref<IRestaurant[]>(restaurants);
       <div class="column">
         <RestaurantsTableRow :isHeader="true" />
         <template
-          v-for="(restaurant, index) in restaurantsList.slice(25,restaurantsList.length)"
+          v-for="(restaurant, index) in restaurantsList.slice(
+            25,
+            restaurantsList.length
+          )"
           :key="restaurant.id"
         >
           <RestaurantsTableRow
@@ -39,10 +44,6 @@ const restaurantsList = ref<IRestaurant[]>(restaurants);
 </template>
 
 <style lang="scss" scoped>
-.title {
-  color: #404040;
-  margin: 20px 0;
-}
 .table {
   display: flex;
   width: 100%;
