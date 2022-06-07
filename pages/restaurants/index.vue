@@ -1,6 +1,6 @@
 <script setup lang="ts"></script>
 <template>
-  <div>
-    <RestaurantsTable/>
-  </div>
+    <div>
+        <RestaurantsTable/>
+    </div>
 </template>
